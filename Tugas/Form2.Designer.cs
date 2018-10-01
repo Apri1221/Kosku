@@ -90,6 +90,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 1;
+            this.button1.Text = "Tambah";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
