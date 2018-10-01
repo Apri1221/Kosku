@@ -134,7 +134,7 @@ namespace Tugas
                 DateTime keluar = dateTimePicker2.Value;
                 String pelunasan = textBox4.Text;
 
-                String query = "UPDATE tabel_sewa as t SET t.nama_penghuni='" + nama_penghuni + "',t.tanggal_masuk='" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "',t.tanggal_keluar ='" + keluar.ToString("yyyy-MM-dd H:mm:ss") +  "' WHERE t.id = " + id;
+                String query = "UPDATE tabel_sewa SET nama_penghuni='" + nama_penghuni + "',tanggal_masuk='" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "',tanggal_keluar ='" + keluar.ToString("yyyy-MM-dd H:mm:ss") +  "' WHERE no_kamar = " + id;
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
 
