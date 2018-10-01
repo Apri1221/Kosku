@@ -13,7 +13,7 @@ namespace Tugas
 {
     public partial class Form2 : Form
     {
-        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none";
+        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sistem_kos;SslMode=none";
         private Form3 frm3;
 
         MySqlConnection databaseConnection = new MySqlConnection(connectionString);
@@ -75,6 +75,64 @@ namespace Tugas
         {
             frm3 = new Form3();
             frm3.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listView3.Items.Clear();
+
+            try
+            {
+                String query = "SELECT * FROM tabel_kamar";
+                commandDatabase = new MySqlCommand(query, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        String[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(2) };
+                        var listViewItem = new ListViewItem(row);
+                        listView3.Items.Add(listViewItem);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Tidak ada kamar");
+                }
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String query = "INSERT INTO tabel_kamar(no_kamar, ketersediaan, harga) VALUES ('" + tbNo_Kamar.Text + "' , '" + checkBox1..Text + "' , '"+ tbHarga_Kamar.Text + "') ";
+
+                commandDatabase = new MySqlCommand(query, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("Berhasil Menambahkan Data");
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
