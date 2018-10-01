@@ -115,9 +115,10 @@ namespace Tugas
 
         private void button8_Click(object sender, EventArgs e)
         {
+            
             try
             {
-                String query = "INSERT INTO tabel_kamar(no_kamar, ketersediaan, harga) VALUES ('" + tbNo_Kamar.Text + "' , '" + checkBox1.Text + "' , '"+ tbHarga_Kamar.Text + "') ";
+                String query = "INSERT INTO tabel_kamar(no_kamar, ketersediaan, harga) VALUES ('" + tbNo_Kamar.Text + "' , '" + textBox1.Text + "' , '"+ tbHarga_Kamar.Text + "') ";
 
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
@@ -126,6 +127,40 @@ namespace Tugas
                 reader = commandDatabase.ExecuteReader();
 
                 MessageBox.Show("Berhasil Menambahkan Data");
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            listView4.Items.Clear();
+
+            try
+            {
+                String query = "SELECT * FROM tabel_fasilitas";
+                commandDatabase = new MySqlCommand(query, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        String[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8) };
+                        var listViewItem = new ListViewItem(row);
+                        listView4.Items.Add(listViewItem);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Tidak ada kamar");
+                }
 
                 databaseConnection.Close();
             }
