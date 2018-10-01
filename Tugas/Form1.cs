@@ -13,15 +13,9 @@ namespace Tugas
 {
     public partial class Form1 : Form
     {
-<<<<<<< HEAD
 
         private Form2 frm2;
-        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sistem_kos;SslMode=none";
-=======
-        private Form2 frm2;
-
-        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none;convert zero datetime=true;allow user variables=true";
->>>>>>> 1af777046da2b9fe1c15761ac99d0f456a63c022
+        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none";
 
         MySqlConnection databaseConnection = new MySqlConnection(connectionString);
         MySqlCommand commandDatabase;
