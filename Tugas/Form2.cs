@@ -13,13 +13,8 @@ namespace Tugas
 {
     public partial class Form2 : Form
     {
-<<<<<<< HEAD
         static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sistem_kos;SslMode=none";
-=======
         private Form3 frm3;
-
-        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none;convert zero datetime=true;allow user variables=true";
->>>>>>> 1af777046da2b9fe1c15761ac99d0f456a63c022
 
         MySqlConnection databaseConnection = new MySqlConnection(connectionString);
         MySqlCommand commandDatabase;
@@ -71,8 +66,6 @@ namespace Tugas
             
         }
 
-<<<<<<< HEAD
-=======
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -83,6 +76,5 @@ namespace Tugas
             frm3 = new Form3();
             frm3.Show();
         }
->>>>>>> 1af777046da2b9fe1c15761ac99d0f456a63c022
     }
 }
