@@ -176,11 +176,7 @@ namespace Tugas
 
             try
             {
-<<<<<<< HEAD
                 String query = "SELECT tabel_fasilitas.* FROM tabel_fasilitas JOIN tabel_kamar ON tabel_fasilitas.no_kamar = tabel_kamar.no_kamar WHERE tabel_kamar.ketersediaan = 0 ORDER BY tabel_fasilitas.no_kamar ASC";
-=======
-                String query = "SELECT * FROM data_penghuni";
->>>>>>> 3ca5b72abb8d66be0a040c633306bb16eac142bc
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
                 databaseConnection.Open();
@@ -190,22 +186,14 @@ namespace Tugas
                 {
                     while (reader.Read())
                     {
-<<<<<<< HEAD
                         String[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7) };
-=======
-                        String[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5)};
->>>>>>> 3ca5b72abb8d66be0a040c633306bb16eac142bc
                         var listViewItem = new ListViewItem(row);
                         listView1.Items.Add(listViewItem);
                     }
                 }
                 else
                 {
-<<<<<<< HEAD
                     MessageBox.Show("Data Tidak Ada");
-=======
-                    MessageBox.Show("Tidak ada kamar");
->>>>>>> 3ca5b72abb8d66be0a040c633306bb16eac142bc
                 }
 
                 databaseConnection.Close();
