@@ -181,6 +181,7 @@
             this.button7.TabIndex = 2;
             this.button7.Text = "Read";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -222,12 +223,12 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Tanggal Masuk";
-            this.columnHeader3.Width = 110;
+            this.columnHeader3.Width = 140;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Tanggal Keluar";
-            this.columnHeader4.Width = 110;
+            this.columnHeader4.Width = 140;
             // 
             // columnHeader5
             // 
@@ -285,6 +286,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
