@@ -47,7 +47,7 @@ namespace Tugas
                 }
                 else
                 {
-                    MessageBox.Show("Data Tidak Ada");
+                    MessageBox.Show("Tidak ada kamar");
                 }
 
                 databaseConnection.Close();
@@ -64,9 +64,9 @@ namespace Tugas
             DateTime keluar = dateTimePicker2.Value;
             try
             {
-                String query = "INSERT INTO tabel_sewa(no_kamar, durasi, tanggal_masuk, tanggal_keluar, pelunasan)" +
+                String query = "INSERT INTO tabel_sewa(no_kamar, nama_penghuni, tanggal_masuk, tanggal_keluar, pelunasan)" +
                     "VALUES ('" + textBox1.Text + "' , '" + textBox2.Text + "' , '" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "' , '"
-                    + keluar.ToString("yyyy-MM-dd H:mm:ss") + "' , '" + textBox4.Text + "')";
+                    + keluar.ToString("yyyy-MM-dd H:mm:ss") + "' , '" + textBox4.Text + "') ";
 
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
@@ -129,12 +129,12 @@ namespace Tugas
             {
                 ListViewItem item = listView1.SelectedItems[0];
                 String id = item.SubItems[0].Text;
-                String durasi = textBox2.Text;
+                String nama_penghuni = textBox2.Text;
                 DateTime masuk = dateTimePicker1.Value;
                 DateTime keluar = dateTimePicker2.Value;
                 String pelunasan = textBox4.Text;
 
-                String query = "UPDATE user SET durasi='" + durasi + "',tanggal_masuk='" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "',tanggal_keluar='" + keluar.ToString("yyyy-MM-dd H:mm:ss") + "' WHERE id = " + id;
+                String query = "UPDATE tabel_sewa as t SET t.nama_penghuni='" + nama_penghuni + "',t.tanggal_masuk='" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "',t.tanggal_keluar ='" + keluar.ToString("yyyy-MM-dd H:mm:ss") +  "' WHERE t.id = " + id;
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
 

@@ -49,6 +49,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -62,7 +63,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(628, 376);
+            this.tabControl1.Size = new System.Drawing.Size(709, 376);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -159,7 +160,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(620, 350);
+            this.tabPage2.Size = new System.Drawing.Size(701, 350);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Sewa Kos";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -172,12 +173,13 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader5,
+            this.columnHeader11});
             this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView2.Location = new System.Drawing.Point(8, 5);
             this.listView2.MultiSelect = false;
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(604, 289);
+            this.listView2.Size = new System.Drawing.Size(685, 289);
             this.listView2.TabIndex = 6;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -189,8 +191,8 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Durasi";
-            this.columnHeader2.Width = 100;
+            this.columnHeader2.Text = "Nama Penghuni";
+            this.columnHeader2.Width = 123;
             // 
             // columnHeader3
             // 
@@ -209,7 +211,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(537, 300);
+            this.button10.Location = new System.Drawing.Point(618, 300);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 32);
             this.button10.TabIndex = 5;
@@ -236,11 +238,16 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Luas Kamar";
+            this.columnHeader11.Width = 98;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 376);
+            this.ClientSize = new System.Drawing.Size(709, 376);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -275,5 +282,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
     }
 }
