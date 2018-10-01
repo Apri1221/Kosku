@@ -117,7 +117,7 @@ namespace Tugas
         {
             try
             {
-                String query = "INSERT INTO tabel_kamar(no_kamar, ketersediaan, harga) VALUES ('" + tbNo_Kamar.Text + "' , '" + checkBox1..Text + "' , '"+ tbHarga_Kamar.Text + "') ";
+                String query = "INSERT INTO tabel_kamar(no_kamar, ketersediaan, harga) VALUES ('" + tbNo_Kamar.Text + "' , '" + checkBox1.Text + "' , '"+ tbHarga_Kamar.Text + "') ";
 
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
