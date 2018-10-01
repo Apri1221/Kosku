@@ -38,7 +38,6 @@
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -77,6 +76,7 @@
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -103,7 +103,6 @@
             this.tabPage1.Controls.Add(this.listView1);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
@@ -121,7 +120,8 @@
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader9,
-            this.columnHeader10});
+            this.columnHeader10,
+            this.columnHeader24});
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.Location = new System.Drawing.Point(12, 11);
             this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -139,23 +139,23 @@
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Durasi";
+            this.columnHeader7.Text = "Nama";
             this.columnHeader7.Width = 100;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Tanggal Masuk";
-            this.columnHeader8.Width = 110;
+            this.columnHeader8.Text = "No identitas";
+            this.columnHeader8.Width = 113;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Tanggal Keluar";
-            this.columnHeader9.Width = 110;
+            this.columnHeader9.Text = "Alamat Asal";
+            this.columnHeader9.Width = 120;
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "Lunas";
-            this.columnHeader10.Width = 70;
+            this.columnHeader10.Text = "No HP";
+            this.columnHeader10.Width = 119;
             // 
             // button5
             // 
@@ -169,24 +169,14 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(150, 463);
+            this.button2.Location = new System.Drawing.Point(12, 465);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 49);
             this.button2.TabIndex = 2;
             this.button2.Text = "Read";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 463);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 49);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tabPage2
             // 
@@ -514,6 +504,11 @@
             // 
             this.columnHeader23.Text = "AC";
             // 
+            // columnHeader24
+            // 
+            this.columnHeader24.Text = "Pelunasan";
+            this.columnHeader24.Width = 213;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -540,7 +535,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button7;
@@ -585,5 +579,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader21;
         private System.Windows.Forms.ColumnHeader columnHeader22;
         private System.Windows.Forms.ColumnHeader columnHeader23;
+        private System.Windows.Forms.ColumnHeader columnHeader24;
     }
 }
