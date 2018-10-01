@@ -37,8 +37,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
@@ -53,6 +51,8 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -154,24 +154,6 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "Logout";
             this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(289, 300);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 32);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Delete";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(194, 300);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 32);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Update";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -278,6 +260,24 @@
             this.columnHeader10.Text = "Lunas";
             this.columnHeader10.Width = 70;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(289, 300);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 32);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "Delete";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(194, 300);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 32);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Update";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,8 +305,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListView listView1;
@@ -321,5 +319,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }
