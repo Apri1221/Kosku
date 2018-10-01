@@ -13,7 +13,7 @@ namespace Tugas
 {
     public partial class Form2 : Form
     {
-        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sistem_kos;SslMode=none";
+        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none";
         private Form3 frm3;
 
         MySqlConnection databaseConnection = new MySqlConnection(connectionString);
@@ -160,6 +160,40 @@ namespace Tugas
                 else
                 {
                     MessageBox.Show("Tidak ada kamar");
+                }
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+
+            try
+            {
+                String query = "SELECT tabel_fasilitas.* FROM tabel_fasilitas JOIN tabel_kamar ON tabel_fasilitas.no_kamar = tabel_kamar.no_kamar WHERE tabel_kamar.ketersediaan = 0 ORDER BY tabel_fasilitas.no_kamar ASC";
+                commandDatabase = new MySqlCommand(query, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        String[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7) };
+                        var listViewItem = new ListViewItem(row);
+                        listView1.Items.Add(listViewItem);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Data Tidak Ada");
                 }
 
                 databaseConnection.Close();

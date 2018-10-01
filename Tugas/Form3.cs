@@ -68,14 +68,23 @@ namespace Tugas
                     "VALUES ('" + textBox1.Text + "' , '" + textBox2.Text + "' , '" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "' , '"
                     + keluar.ToString("yyyy-MM-dd H:mm:ss") + "' , '" + textBox4.Text + "') ";
 
+                String query2 = "UPDATE tabel_kamar SET ketersediaan = 1 WHERE no_kamar = " + textBox1.Text;
+
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
 
                 databaseConnection.Open();
+
                 reader = commandDatabase.ExecuteReader();
 
                 MessageBox.Show("Berhasil Menambahkan Data");
 
+                databaseConnection.Close();
+
+                commandDatabase = new MySqlCommand(query2, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
                 databaseConnection.Close();
             }
             catch (Exception ex)
@@ -115,6 +124,12 @@ namespace Tugas
                 reader = commandDatabase.ExecuteReader();
                 MessageBox.Show("Data sukses dihapus");
 
+                databaseConnection.Close();
+                String query2 = "UPDATE tabel_kamar SET ketersediaan = 0 WHERE no_kamar = " + textBox1.Text;
+                commandDatabase = new MySqlCommand(query2, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
                 databaseConnection.Close();
             }
             catch (Exception ex)
