@@ -13,16 +13,9 @@ namespace Tugas
 {
     public partial class Form1 : Form
     {
-<<<<<<< HEAD
-        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sistem_kos;SslMode=none";
-=======
+
         private Form2 frm2;
-<<<<<<< HEAD
         static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sistem_kos;SslMode=none";
-=======
-        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none";
->>>>>>> 1f9a794b387538080b39c4930f0915eb193bdf94
->>>>>>> d6a9e2e09ae66b72fffa021ad54f4ae8ab32f226
 
         MySqlConnection databaseConnection = new MySqlConnection(connectionString);
         MySqlCommand commandDatabase;
@@ -61,6 +54,11 @@ namespace Tugas
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
