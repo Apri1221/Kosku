@@ -41,8 +41,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // listView1
@@ -154,6 +154,14 @@
             this.textBox4.Size = new System.Drawing.Size(145, 20);
             this.textBox4.TabIndex = 9;
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker2.Location = new System.Drawing.Point(35, 135);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(145, 20);
+            this.dateTimePicker2.TabIndex = 11;
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
@@ -163,14 +171,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(145, 20);
             this.dateTimePicker1.TabIndex = 10;
             this.dateTimePicker1.Value = new System.DateTime(2018, 10, 1, 20, 56, 42, 0);
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePicker2.Location = new System.Drawing.Point(35, 135);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(145, 20);
-            this.dateTimePicker2.TabIndex = 11;
             // 
             // Form3
             // 
@@ -211,7 +211,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

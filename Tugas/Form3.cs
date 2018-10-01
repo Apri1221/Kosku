@@ -59,11 +59,13 @@ namespace Tugas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DateTime masuk = dateTimePicker1.Value;
+            DateTime keluar = dateTimePicker2.Value;
             try
             {
                 String query = "INSERT INTO tabel_sewa(no_kamar, durasi, tanggal_masuk, tanggal_keluar, pelunasan)" +
-                    "VALUES ('" + textBox1.Text + "' , '" + textBox2.Text + "' , '" + dateTimePicker1.Value + "' , '"
-                    + dateTimePicker2.Value + "' , '" + textBox4.Text + "')";
+                    "VALUES ('" + textBox1.Text + "' , '" + textBox2.Text + "' , '" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "' , '"
+                    + keluar.ToString("yyyy-MM-dd H:mm:ss") + "' , '" + textBox4.Text + "')";
 
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
