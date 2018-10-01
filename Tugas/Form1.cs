@@ -13,7 +13,8 @@ namespace Tugas
 {
     public partial class Form1 : Form
     {
-        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=1234asdf;database=sistem_kos;SslMode=none";
+        private Form2 frm2;
+        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none";
 
         MySqlConnection databaseConnection = new MySqlConnection(connectionString);
         MySqlCommand commandDatabase;
@@ -38,8 +39,8 @@ namespace Tugas
                 if (reader.HasRows)
                 {
                     this.Hide();
-                    Form2 main = new Form2();
-                    main.Show();
+                    frm2 = new Form2();
+                    frm2.Show();
                 }
                 else
                 {
