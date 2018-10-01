@@ -61,7 +61,9 @@ namespace Tugas
         {
             try
             {
-                String query = "INSERT INTO tabel_sewa(no_kamar, durasi, tanggal_masuk, tanggal_keluar, pelunasan) VALUES ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + dateTimePicker1.Text + "','"+ dateTimePicker2.Text + "','" + textBox4.Text + "')";
+                String query = "INSERT INTO tabel_sewa(no_kamar, durasi, tanggal_masuk, tanggal_keluar, pelunasan)" +
+                    "VALUES ('" + textBox1.Text + "' , '" + textBox2.Text + "' , '" + dateTimePicker1.Value + "' , '"
+                    + dateTimePicker2.Value + "' , '" + textBox4.Text + "')";
 
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
