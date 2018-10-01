@@ -35,10 +35,12 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -77,9 +79,7 @@
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -105,10 +105,9 @@
             this.tabPage1.Controls.Add(this.listView1);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(701, 350);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dashboard";
@@ -155,11 +154,24 @@
             this.columnHeader9.Text = "Meja";
             this.columnHeader9.Width = 63;
             // 
+            // columnHeader24
+            // 
+            this.columnHeader24.DisplayIndex = 5;
+            this.columnHeader24.Text = "Kursi";
+            // 
             // columnHeader10
             // 
             this.columnHeader10.DisplayIndex = 4;
             this.columnHeader10.Text = "Lemari";
             this.columnHeader10.Width = 70;
+            // 
+            // columnHeader25
+            // 
+            this.columnHeader25.Text = "TV";
+            // 
+            // columnHeader26
+            // 
+            this.columnHeader26.Text = "AC";
             // 
             // button5
             // 
@@ -176,19 +188,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 32);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Read";
+            this.button2.Text = "Cek";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(8, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabPage2
             // 
@@ -198,7 +200,7 @@
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(701, 350);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Sewa Kos";
@@ -268,7 +270,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 32);
             this.button7.TabIndex = 2;
-            this.button7.Text = "Read";
+            this.button7.Text = "Cek";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -278,7 +280,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 32);
             this.button6.TabIndex = 1;
-            this.button6.Text = "Create";
+            this.button6.Text = "Kelola";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -295,7 +297,7 @@
             this.tabPage3.Controls.Add(this.button8);
             this.tabPage3.Controls.Add(this.listView3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(701, 350);
             this.tabPage3.TabIndex = 2;
@@ -305,7 +307,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(109, 276);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(134, 20);
             this.textBox1.TabIndex = 17;
@@ -313,7 +315,7 @@
             // tbHarga_Kamar
             // 
             this.tbHarga_Kamar.Location = new System.Drawing.Point(109, 308);
-            this.tbHarga_Kamar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHarga_Kamar.Margin = new System.Windows.Forms.Padding(2);
             this.tbHarga_Kamar.Name = "tbHarga_Kamar";
             this.tbHarga_Kamar.Size = new System.Drawing.Size(134, 20);
             this.tbHarga_Kamar.TabIndex = 16;
@@ -341,7 +343,7 @@
             // tbNo_Kamar
             // 
             this.tbNo_Kamar.Location = new System.Drawing.Point(109, 245);
-            this.tbNo_Kamar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNo_Kamar.Margin = new System.Windows.Forms.Padding(2);
             this.tbNo_Kamar.Name = "tbNo_Kamar";
             this.tbNo_Kamar.Size = new System.Drawing.Size(134, 20);
             this.tbNo_Kamar.TabIndex = 12;
@@ -358,7 +360,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(615, 245);
+            this.button3.Location = new System.Drawing.Point(589, 269);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 32);
             this.button3.TabIndex = 10;
@@ -367,17 +369,17 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(505, 245);
+            this.button4.Location = new System.Drawing.Point(482, 269);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 32);
             this.button4.TabIndex = 9;
-            this.button4.Text = "Read";
+            this.button4.Text = "Cek";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(413, 245);
+            this.button8.Location = new System.Drawing.Point(374, 269);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 32);
             this.button8.TabIndex = 8;
@@ -418,11 +420,12 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button1);
             this.tabPage4.Controls.Add(this.button9);
             this.tabPage4.Controls.Add(this.button11);
             this.tabPage4.Controls.Add(this.listView4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(701, 350);
             this.tabPage4.TabIndex = 3;
@@ -444,7 +447,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 32);
             this.button11.TabIndex = 12;
-            this.button11.Text = "Read";
+            this.button11.Text = "Cek";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
@@ -474,56 +477,56 @@
             // columnHeader15
             // 
             this.columnHeader15.Text = "Nomor Kamar";
-            this.columnHeader15.Width = 140;
+            this.columnHeader15.Width = 93;
             // 
             // columnHeader16
             // 
             this.columnHeader16.Text = "Ukuran Kamar";
-            this.columnHeader16.Width = 157;
+            this.columnHeader16.Width = 92;
             // 
             // columnHeader17
             // 
             this.columnHeader17.Text = "Tipe Kamar";
-            this.columnHeader17.Width = 140;
+            this.columnHeader17.Width = 82;
             // 
             // columnHeader18
             // 
             this.columnHeader18.Text = "Kamar Mandi Luar/Dalam";
-            this.columnHeader18.Width = 229;
+            this.columnHeader18.Width = 160;
             // 
             // columnHeader19
             // 
             this.columnHeader19.Text = "Meja";
+            this.columnHeader19.Width = 46;
             // 
             // columnHeader20
             // 
             this.columnHeader20.Text = "Kursi";
+            this.columnHeader20.Width = 52;
             // 
             // columnHeader21
             // 
             this.columnHeader21.Text = "Lemari";
-            this.columnHeader21.Width = 108;
+            this.columnHeader21.Width = 68;
             // 
             // columnHeader22
             // 
             this.columnHeader22.Text = "TV";
+            this.columnHeader22.Width = 44;
             // 
             // columnHeader23
             // 
             this.columnHeader23.Text = "AC";
             // 
-            // columnHeader24
+            // button1
             // 
-            this.columnHeader24.DisplayIndex = 5;
-            this.columnHeader24.Text = "Kursi";
-            // 
-            // columnHeader25
-            // 
-            this.columnHeader25.Text = "TV";
-            // 
-            // columnHeader26
-            // 
-            this.columnHeader26.Text = "AC";
+            this.button1.Location = new System.Drawing.Point(352, 261);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 32);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Kelola";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form2
             // 
@@ -550,7 +553,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button7;
@@ -598,5 +600,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader24;
         private System.Windows.Forms.ColumnHeader columnHeader25;
         private System.Windows.Forms.ColumnHeader columnHeader26;
+        private System.Windows.Forms.Button button1;
     }
 }

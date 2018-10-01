@@ -15,6 +15,7 @@ namespace Tugas
     {
         static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none";
         private Form3 frm3;
+        private Form5 frm5;
 
         MySqlConnection databaseConnection = new MySqlConnection(connectionString);
         MySqlCommand commandDatabase;
@@ -186,7 +187,7 @@ namespace Tugas
                 {
                     while (reader.Read())
                     {
-                        String[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7) };
+                        String[] row = { reader.GetString(0), reader.GetString(1), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8) };
                         var listViewItem = new ListViewItem(row);
                         listView1.Items.Add(listViewItem);
                     }
@@ -202,6 +203,12 @@ namespace Tugas
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            frm5 = new Form5();
+            frm5.Show();
         }
     }
 }
