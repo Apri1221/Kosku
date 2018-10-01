@@ -34,7 +34,6 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -53,8 +52,7 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader5});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Right;
             this.listView1.Location = new System.Drawing.Point(210, 0);
             this.listView1.Margin = new System.Windows.Forms.Padding(2);
@@ -90,10 +88,6 @@
             // 
             this.columnHeader5.Text = "pelunasan";
             this.columnHeader5.Width = 79;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "ukuran_kamar";
             // 
             // button1
             // 
@@ -224,6 +218,5 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }
