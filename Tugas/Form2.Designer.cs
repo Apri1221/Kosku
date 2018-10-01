@@ -280,6 +280,7 @@
             this.button7.TabIndex = 2;
             this.button7.Text = "Read";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -325,13 +326,23 @@
             // 
             // columnHeader11
             // 
+<<<<<<< HEAD
             this.columnHeader11.Text = "Nomor Kamar";
             this.columnHeader11.Width = 100;
+=======
+            this.columnHeader3.Text = "Tanggal Masuk";
+            this.columnHeader3.Width = 140;
+>>>>>>> d6a9e2e09ae66b72fffa021ad54f4ae8ab32f226
             // 
             // columnHeader12
             // 
+<<<<<<< HEAD
             this.columnHeader12.Text = "Nama";
             this.columnHeader12.Width = 100;
+=======
+            this.columnHeader4.Text = "Tanggal Keluar";
+            this.columnHeader4.Width = 140;
+>>>>>>> d6a9e2e09ae66b72fffa021ad54f4ae8ab32f226
             // 
             // columnHeader13
             // 
@@ -388,6 +399,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
