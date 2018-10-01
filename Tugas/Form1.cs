@@ -16,5 +16,10 @@ namespace Tugas
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 main = new Form2();
+        }
     }
 }
