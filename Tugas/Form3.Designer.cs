@@ -54,24 +54,25 @@
             this.columnHeader4,
             this.columnHeader5});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.listView1.Location = new System.Drawing.Point(217, 0);
+            this.listView1.Location = new System.Drawing.Point(214, 0);
             this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(466, 342);
+            this.listView1.Size = new System.Drawing.Size(469, 342);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "no_kamar";
-            this.columnHeader1.Width = 128;
+            this.columnHeader1.Width = 80;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "durasi";
-            this.columnHeader2.Width = 111;
+            this.columnHeader2.Width = 100;
             // 
             // columnHeader3
             // 
@@ -81,12 +82,12 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "tanggal_keluar";
-            this.columnHeader4.Width = 137;
+            this.columnHeader4.Width = 120;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "pelunasan";
-            this.columnHeader5.Width = 147;
+            this.columnHeader5.Width = 100;
             // 
             // button1
             // 
@@ -119,6 +120,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -129,6 +131,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox1
             // 
@@ -157,6 +160,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(35, 135);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(145, 20);
@@ -165,6 +169,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(35, 104);
             this.dateTimePicker1.MinDate = new System.DateTime(1949, 12, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
