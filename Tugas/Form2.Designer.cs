@@ -30,29 +30,29 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -84,6 +84,49 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dashboard";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Location = new System.Drawing.Point(8, 7);
+            this.listView1.MultiSelect = false;
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(604, 289);
+            this.listView1.TabIndex = 7;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Nomor Kamar";
+            this.columnHeader6.Width = 100;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Durasi";
+            this.columnHeader7.Width = 100;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Tanggal Masuk";
+            this.columnHeader8.Width = 110;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Tanggal Keluar";
+            this.columnHeader9.Width = 110;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Lunas";
+            this.columnHeader10.Width = 70;
             // 
             // button5
             // 
@@ -129,6 +172,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Create";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabPage2
             // 
@@ -145,34 +189,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Sewa Kos";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(537, 300);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 32);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Logout";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(100, 300);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 32);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Read";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(8, 300);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 32);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Create";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // listView2
             // 
@@ -217,48 +233,14 @@
             this.columnHeader5.Text = "Lunas";
             this.columnHeader5.Width = 70;
             // 
-            // listView1
+            // button10
             // 
-            this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.Default;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.Location = new System.Drawing.Point(8, 7);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(604, 289);
-            this.listView1.TabIndex = 7;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Nomor Kamar";
-            this.columnHeader6.Width = 100;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Durasi";
-            this.columnHeader7.Width = 100;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Tanggal Masuk";
-            this.columnHeader8.Width = 110;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Tanggal Keluar";
-            this.columnHeader9.Width = 110;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Lunas";
-            this.columnHeader10.Width = 70;
+            this.button10.Location = new System.Drawing.Point(537, 300);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 32);
+            this.button10.TabIndex = 5;
+            this.button10.Text = "Logout";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
@@ -277,6 +259,26 @@
             this.button8.TabIndex = 3;
             this.button8.Text = "Update";
             this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(100, 300);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 32);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "Read";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(8, 300);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 32);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Create";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form2
             // 
