@@ -30,38 +30,51 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -84,6 +97,49 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dashboard";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Location = new System.Drawing.Point(8, 7);
+            this.listView1.MultiSelect = false;
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(604, 289);
+            this.listView1.TabIndex = 7;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Nomor Kamar";
+            this.columnHeader6.Width = 100;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Durasi";
+            this.columnHeader7.Width = 100;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Tanggal Masuk";
+            this.columnHeader8.Width = 110;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Tanggal Keluar";
+            this.columnHeader9.Width = 110;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Lunas";
+            this.columnHeader10.Width = 70;
             // 
             // button5
             // 
@@ -146,6 +202,49 @@
             this.tabPage2.Text = "Sewa Kos";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // listView2
+            // 
+            this.listView2.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView2.Location = new System.Drawing.Point(8, 5);
+            this.listView2.MultiSelect = false;
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(604, 289);
+            this.listView2.TabIndex = 6;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nomor Kamar";
+            this.columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Durasi";
+            this.columnHeader2.Width = 100;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tanggal Masuk";
+            this.columnHeader3.Width = 110;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Tanggal Keluar";
+            this.columnHeader4.Width = 110;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Lunas";
+            this.columnHeader5.Width = 70;
+            // 
             // button10
             // 
             this.button10.Location = new System.Drawing.Point(537, 300);
@@ -191,91 +290,95 @@
             this.button6.Text = "Create";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // listView2
+            // tabPage3
             // 
-            this.listView2.Alignment = System.Windows.Forms.ListViewAlignment.Default;
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.Location = new System.Drawing.Point(8, 5);
-            this.listView2.MultiSelect = false;
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(604, 289);
-            this.listView2.TabIndex = 6;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.tabPage3.Controls.Add(this.button11);
+            this.tabPage3.Controls.Add(this.button12);
+            this.tabPage3.Controls.Add(this.button13);
+            this.tabPage3.Controls.Add(this.listView3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(620, 350);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Data Penghuni";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // columnHeader1
+            // listView3
             // 
-            this.columnHeader1.Text = "Nomor Kamar";
-            this.columnHeader1.Width = 100;
+            this.listView3.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15,
+            this.columnHeader16});
+            this.listView3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView3.Location = new System.Drawing.Point(0, 0);
+            this.listView3.MultiSelect = false;
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(620, 293);
+            this.listView3.TabIndex = 7;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.listView3.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader2
+            // columnHeader11
             // 
-            this.columnHeader2.Text = "Durasi";
-            this.columnHeader2.Width = 100;
+            this.columnHeader11.Text = "Nomor Kamar";
+            this.columnHeader11.Width = 100;
             // 
-            // columnHeader3
+            // columnHeader12
             // 
-            this.columnHeader3.Text = "Tanggal Masuk";
-            this.columnHeader3.Width = 110;
+            this.columnHeader12.Text = "Nama";
+            this.columnHeader12.Width = 100;
             // 
-            // columnHeader4
+            // columnHeader13
             // 
-            this.columnHeader4.Text = "Tanggal Keluar";
-            this.columnHeader4.Width = 110;
+            this.columnHeader13.Text = "No. Identitas";
+            this.columnHeader13.Width = 110;
             // 
-            // columnHeader5
+            // columnHeader14
             // 
-            this.columnHeader5.Text = "Lunas";
-            this.columnHeader5.Width = 70;
+            this.columnHeader14.Text = "Alamat";
+            this.columnHeader14.Width = 129;
             // 
-            // listView1
+            // columnHeader15
             // 
-            this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.Default;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.Location = new System.Drawing.Point(8, 7);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(604, 289);
-            this.listView1.TabIndex = 7;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.columnHeader15.Text = "No. HP";
+            this.columnHeader15.Width = 118;
             // 
-            // columnHeader6
+            // button11
             // 
-            this.columnHeader6.Text = "Nomor Kamar";
-            this.columnHeader6.Width = 100;
+            this.button11.Location = new System.Drawing.Point(537, 299);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 32);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Logout";
+            this.button11.UseVisualStyleBackColor = true;
             // 
-            // columnHeader7
+            // button12
             // 
-            this.columnHeader7.Text = "Durasi";
-            this.columnHeader7.Width = 100;
+            this.button12.Location = new System.Drawing.Point(89, 299);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 32);
+            this.button12.TabIndex = 11;
+            this.button12.Text = "Delete";
+            this.button12.UseVisualStyleBackColor = true;
             // 
-            // columnHeader8
+            // button13
             // 
-            this.columnHeader8.Text = "Tanggal Masuk";
-            this.columnHeader8.Width = 110;
+            this.button13.Location = new System.Drawing.Point(8, 299);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 32);
+            this.button13.TabIndex = 10;
+            this.button13.Text = "Add";
+            this.button13.UseVisualStyleBackColor = true;
             // 
-            // columnHeader9
+            // columnHeader16
             // 
-            this.columnHeader9.Text = "Tanggal Keluar";
-            this.columnHeader9.Width = 110;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Lunas";
-            this.columnHeader10.Width = 70;
+            this.columnHeader16.Text = "Lunas";
+            this.columnHeader16.Width = 59;
             // 
             // Form2
             // 
@@ -288,6 +391,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -319,5 +423,16 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
     }
 }
