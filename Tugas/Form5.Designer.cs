@@ -40,7 +40,10 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -52,10 +55,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // textBox4
@@ -160,16 +159,25 @@
             this.columnHeader5.Text = "meja";
             this.columnHeader5.Width = 45;
             // 
-            // button1
+            // columnHeader6
             // 
-            this.button1.Location = new System.Drawing.Point(25, 240);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 29);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.columnHeader6.Text = "kursi";
+            this.columnHeader6.Width = 45;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "lemari";
+            this.columnHeader7.Width = 45;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "televisi";
+            this.columnHeader8.Width = 45;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "ac";
+            this.columnHeader9.Width = 45;
             // 
             // textBox3
             // 
@@ -264,26 +272,6 @@
             this.label5.TabIndex = 30;
             this.label5.Text = "ac";
             // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "kursi";
-            this.columnHeader6.Width = 45;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "lemari";
-            this.columnHeader7.Width = 45;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "televisi";
-            this.columnHeader8.Width = 45;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "ac";
-            this.columnHeader9.Width = 45;
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,7 +294,6 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
             this.Name = "Form5";
             this.Text = "Form5";
@@ -329,7 +316,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;

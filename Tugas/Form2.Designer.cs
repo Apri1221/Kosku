@@ -49,7 +49,6 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button10 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -68,7 +67,6 @@
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.listView4 = new System.Windows.Forms.ListView();
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -196,7 +194,6 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.listView2);
-            this.tabPage2.Controls.Add(this.button10);
             this.tabPage2.Controls.Add(this.button7);
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -255,15 +252,6 @@
             // 
             this.columnHeader11.Text = "Luas Kamar";
             this.columnHeader11.Width = 98;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(618, 300);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 32);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Logout";
-            this.button10.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -423,7 +411,6 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.button1);
-            this.tabPage4.Controls.Add(this.button9);
             this.tabPage4.Controls.Add(this.button11);
             this.tabPage4.Controls.Add(this.listView4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -443,16 +430,6 @@
             this.button1.Text = "Kelola";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(576, 261);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 32);
-            this.button9.TabIndex = 13;
-            this.button9.Text = "Logout";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button11
             // 
@@ -535,6 +512,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(709, 376);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form2";
@@ -557,7 +535,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListView listView1;
@@ -592,7 +569,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.ColumnHeader columnHeader19;
