@@ -144,12 +144,13 @@ namespace Tugas
             {
                 ListViewItem item = listView1.SelectedItems[0];
                 String id = item.SubItems[0].Text;
+                String no_kamar = textBox1.Text;
                 String nama_penghuni = textBox2.Text;
                 DateTime masuk = dateTimePicker1.Value;
                 DateTime keluar = dateTimePicker2.Value;
                 String pelunasan = textBox4.Text;
 
-                String query = "UPDATE tabel_sewa SET nama_penghuni='" + nama_penghuni + "',tanggal_masuk='" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "',tanggal_keluar ='" + keluar.ToString("yyyy-MM-dd H:mm:ss") +  "' WHERE no_kamar = " + id;
+                String query = "UPDATE tabel_sewa SET no_kamar='" + no_kamar + "',nama_penghuni='" + nama_penghuni + "',tanggal_masuk='" + masuk.ToString("yyyy-MM-dd H:mm:ss") + "',tanggal_keluar ='" + keluar.ToString("yyyy-MM-dd H:mm:ss") +  "' WHERE no_kamar = " + id;
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
 

@@ -67,6 +67,7 @@
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.listView4 = new System.Windows.Forms.ListView();
@@ -79,7 +80,6 @@
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -364,8 +364,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 32);
             this.button3.TabIndex = 10;
-            this.button3.Text = "Logout";
+            this.button3.Text = "Hapus";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -432,6 +433,16 @@
             this.tabPage4.Text = "Fasilitas";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(352, 261);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 32);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Kelola";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(576, 261);
@@ -440,6 +451,7 @@
             this.button9.TabIndex = 13;
             this.button9.Text = "Logout";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button11
             // 
@@ -517,16 +529,6 @@
             // columnHeader23
             // 
             this.columnHeader23.Text = "AC";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(352, 261);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Kelola";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form2
             // 

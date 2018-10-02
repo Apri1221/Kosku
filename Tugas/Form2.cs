@@ -14,6 +14,7 @@ namespace Tugas
     public partial class Form2 : Form
     {
         static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=apriyanto12;database=sistem_kos;SslMode=none";
+        private Form1 frm1;
         private Form3 frm3;
         private Form5 frm5;
 
@@ -121,6 +122,7 @@ namespace Tugas
             {
                 String query = "INSERT INTO tabel_kamar(no_kamar, ketersediaan, harga) VALUES ('" + tbNo_Kamar.Text + "' , '" + textBox1.Text + "' , '"+ tbHarga_Kamar.Text + "') ";
 
+                String query2 = "INSERT INTO tabel_fasilitas(no_kamar, ukuran_kamar, tipe_kamar, kmLuar_dalam, meja, kursi, lemari, televisi, ac) VALUES ('" + tbNo_Kamar.Text + "' , ' ' , ' ', ' ', '0', '0', '0', '0', '0') ";
                 commandDatabase = new MySqlCommand(query, databaseConnection);
                 commandDatabase.CommandTimeout = 60;
 
@@ -128,6 +130,14 @@ namespace Tugas
                 reader = commandDatabase.ExecuteReader();
 
                 MessageBox.Show("Berhasil Menambahkan Data");
+
+                databaseConnection.Close();
+
+                commandDatabase = new MySqlCommand(query2, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
 
                 databaseConnection.Close();
             }
@@ -209,6 +219,51 @@ namespace Tugas
         {
             frm5 = new Form5();
             frm5.Show();
+        }
+
+        private void listView3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView3.SelectedItems.Count == 0)
+                return;
+
+            ListViewItem item = listView3.SelectedItems[0];
+            tbNo_Kamar.Text = item.SubItems[0].Text;
+            textBox1.Text = item.SubItems[1].Text;
+            tbHarga_Kamar.Text = item.SubItems[2].Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                String id = tbNo_Kamar.Text;
+                String query = "DELETE FROM tabel_kamar WHERE no_kamar = " + id;
+                commandDatabase = new MySqlCommand(query, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
+                MessageBox.Show("Data sukses dihapus");
+                databaseConnection.Close();
+
+                String query2 = "DELETE FROM tabel_fasilitas WHERE no_kamar = " + id;
+                commandDatabase = new MySqlCommand(query2, databaseConnection);
+                commandDatabase.CommandTimeout = 60;
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            frm1 = new Form1();
+            this.Close();
+            frm1.Show();
         }
     }
 }
