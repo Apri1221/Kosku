@@ -265,5 +265,12 @@ namespace Tugas
             this.Close();
             frm1.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frm1 = new Form1();
+            this.Close();
+            frm1.Show();
+        }
     }
 }
