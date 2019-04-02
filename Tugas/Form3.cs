@@ -165,5 +165,10 @@ namespace Tugas
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

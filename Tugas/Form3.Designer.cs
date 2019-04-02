@@ -179,6 +179,7 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(145, 20);
             this.dateTimePicker1.TabIndex = 10;
             this.dateTimePicker1.Value = new System.DateTime(2018, 10, 1, 20, 56, 42, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label1
             // 
@@ -227,7 +228,7 @@
             this.Controls.Add(this.listView1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3";
-            this.Text = "Data Kamar Kos";
+            this.Text = "Data Penghuni Kos";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
